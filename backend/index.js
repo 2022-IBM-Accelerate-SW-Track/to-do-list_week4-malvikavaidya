@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     res.send({ message: "Connected to Backend server!" });
     });
 
-app.post("/add/item", addItem);
+app.post("/add/item", addItem)
 
 function addItem (request, response) {
     let id = request.body.jsonObject.id
